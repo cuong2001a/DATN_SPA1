@@ -1,0 +1,142 @@
+FORMAT: 1A
+HOST: 
+
+# SPA User
+
+|created at|author|
+|:---:|:---:|
+|2022-02-17|Tran Anh Quang|
+
+## Update history
+
+|no|date|author|change section|change log|
+|:---:|:---:|:---:|:---:|:---|
+
+
+## User API [GET /api/list-user]
+
+### Description
+
+*  List User
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+       {
+	"data": [
+		{
+			"_id": "620e28dd6824de87df7c26d1",
+			"email": null,
+			"uid": "cbZOJYaANbYhTl5UKYEYh9AqW2A3",
+			"name": "Trần Minh Anh",
+			"photoURL": "https://graph.facebook.com/423832606135027/picture",
+			"role": 1,
+			"verify": true,
+			"createdAt": "2022-02-17T10:52:13.129Z",
+			"updatedAt": "2022-02-17T10:52:13.129Z",
+			"__v": 0
+		},
+		{
+			"_id": "620e26fe6824de87df7c26cd",
+			"email": "quangtaph12673@fpt.edu.vn",
+			"uid": "iof11uXwxgcLMB6eDlyQvbe0FKI2",
+			"name": "Quang Trần Anh",
+			"photoURL": "https://lh3.googleusercontent.com/a-/AOh14Gi1WrLyqtS8TzBT4AwgzgT3PDa4DJF6IIzldkM5=s96-c",
+			"role": 1,
+			"verify": true,
+			"createdAt": "2022-02-17T10:44:14.014Z",
+			"updatedAt": "2022-02-17T10:44:14.014Z",
+			"__v": 0
+		},
+		{
+			"_id": "620d239a96e30c776ccb3e18",
+			"email": "songoku2192@gmail.com",
+			"uid": "zF2dACwGkKe1hfl9rAfDJP4lUg72",
+			"name": "Quang Trần Anh",
+			"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GjypedKeeZh8b0qkLdj9k6wG8yz7ShgY96X0mXC=s96-c",
+			"role": 1,
+			"verify": true,
+			"createdAt": "2022-02-16T16:17:30.865Z",
+			"updatedAt": "2022-02-16T16:17:30.865Z",
+			"__v": 0
+		},
+		{
+			"_id": "620d034b96e30c776ccb3e03",
+			"email": "taquang.hskx.2000@gmail.com",
+			"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+			"name": "Anh Quang Trần",
+			"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+			"role": 1,
+			"verify": true,
+			"createdAt": "2022-02-16T13:59:39.945Z",
+			"updatedAt": "2022-02-16T13:59:39.945Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## User API [PUT /api/update-user/:id]
+
+### Description
+
+*  Update User
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+        {
+	"data": {
+		"_id": "620e28dd6824de87df7c26d1",
+		"email": "quangtaph12672@fpt.edu.vn",
+		"uid": "cbZOJYaANbYhTl5UKYEYh9AqW2A3",
+		"name": "Trần Minh Anh",
+		"photoURL": "https://graph.facebook.com/423832606135027/picture",
+		"role": 0,
+		"verify": true,
+		"createdAt": "2022-02-17T10:52:13.129Z",
+		"updatedAt": "2022-02-19T03:25:42.334Z",
+		"__v": 0
+	},
+	"message": "Update User successfully"
+}
+        ]
+
+## User API [DELETE /api/remove-user/:id]
+
+### Description
+
+*  Delete User
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+  {
+	"message": "Delete user successfully"
+}
+        ]
+

@@ -1,0 +1,459 @@
+FORMAT: 1A
+HOST: 
+
+# SPA - SPA
+
+|created at|author|
+|:---:|:---:|
+|2022-02-18|Tran Anh Quang|
+
+## Update history
+
+|no|date|author|change section|change log|
+|:---:|:---:|:---:|:---:|:---|
+
+## Salary API [POST /api/create-salary]
+
+### Description
+
+*  Create new salary
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+{
+	"data": {
+		"salary_basic": 700000,
+		"user_id": "620d034b96e30c776ccb3e03",
+		"staff_id": "620e4fae43499c575452909f",
+		"work_day_id": "620f6539fdd425b918d3e3cf",
+		"overtime": 0,
+		"holiday": 0,
+		"weekend": 0,
+		"insurance": 0,
+		"personal_income_tax": 0,
+		"bonus": 0,
+		"_id": "620f9e40a4b6c60a37361108",
+		"createdAt": "2022-02-18T13:25:20.357Z",
+		"updatedAt": "2022-02-18T13:25:20.357Z",
+		"__v": 0
+	},
+	"message": "Create salary successfully"
+}
+        ]
+
+## Salary API [GET /api/list-salary]
+
+### Description
+
+*  List Salary
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+  {
+	"data": [
+		{
+			"_id": "620f9e40a4b6c60a37361108",
+			"salary_basic": 700000,
+			"user_id": {
+				"_id": "620d034b96e30c776ccb3e03",
+				"email": "taquang.hskx.2000@gmail.com",
+				"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+				"name": "Anh Quang Trần",
+				"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+				"role": 1,
+				"verify": true,
+				"createdAt": "2022-02-16T13:59:39.945Z",
+				"updatedAt": "2022-02-16T13:59:39.945Z",
+				"__v": 0
+			},
+			"staff_id": {
+				"_id": "620e4fae43499c575452909f",
+				"staff_name": "Trần Quang",
+				"user_id": "620d034b96e30c776ccb3e03",
+				"position_id": "620e4a8288e6701f6f116d01",
+				"star": 5,
+				"status": "ok",
+				"rank": "A",
+				"createdAt": "2022-02-17T13:37:50.943Z",
+				"updatedAt": "2022-02-17T13:37:50.943Z",
+				"__v": 0
+			},
+			"work_day_id": {
+				"_id": "620f6539fdd425b918d3e3cf",
+				"staff_id": "620e4fae43499c575452909f",
+				"day": "2022-02-25T00:00:00.000Z",
+				"status": "ok",
+				"createdAt": "2022-02-18T09:22:01.179Z",
+				"updatedAt": "2022-02-18T09:22:01.179Z",
+				"__v": 0
+			},
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:25:20.357Z",
+			"updatedAt": "2022-02-18T13:25:20.357Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f9e38a4b6c60a37361106",
+			"salary_basic": 500000,
+			"user_id": {
+				"_id": "620d034b96e30c776ccb3e03",
+				"email": "taquang.hskx.2000@gmail.com",
+				"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+				"name": "Anh Quang Trần",
+				"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+				"role": 1,
+				"verify": true,
+				"createdAt": "2022-02-16T13:59:39.945Z",
+				"updatedAt": "2022-02-16T13:59:39.945Z",
+				"__v": 0
+			},
+			"staff_id": {
+				"_id": "620e4fae43499c575452909f",
+				"staff_name": "Trần Quang",
+				"user_id": "620d034b96e30c776ccb3e03",
+				"position_id": "620e4a8288e6701f6f116d01",
+				"star": 5,
+				"status": "ok",
+				"rank": "A",
+				"createdAt": "2022-02-17T13:37:50.943Z",
+				"updatedAt": "2022-02-17T13:37:50.943Z",
+				"__v": 0
+			},
+			"work_day_id": {
+				"_id": "620f6539fdd425b918d3e3cf",
+				"staff_id": "620e4fae43499c575452909f",
+				"day": "2022-02-25T00:00:00.000Z",
+				"status": "ok",
+				"createdAt": "2022-02-18T09:22:01.179Z",
+				"updatedAt": "2022-02-18T09:22:01.179Z",
+				"__v": 0
+			},
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:25:12.965Z",
+			"updatedAt": "2022-02-18T13:25:12.965Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f9e38a4b6c60a37361104",
+			"salary_basic": 500000,
+			"user_id": {
+				"_id": "620d034b96e30c776ccb3e03",
+				"email": "taquang.hskx.2000@gmail.com",
+				"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+				"name": "Anh Quang Trần",
+				"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+				"role": 1,
+				"verify": true,
+				"createdAt": "2022-02-16T13:59:39.945Z",
+				"updatedAt": "2022-02-16T13:59:39.945Z",
+				"__v": 0
+			},
+			"staff_id": {
+				"_id": "620e4fae43499c575452909f",
+				"staff_name": "Trần Quang",
+				"user_id": "620d034b96e30c776ccb3e03",
+				"position_id": "620e4a8288e6701f6f116d01",
+				"star": 5,
+				"status": "ok",
+				"rank": "A",
+				"createdAt": "2022-02-17T13:37:50.943Z",
+				"updatedAt": "2022-02-17T13:37:50.943Z",
+				"__v": 0
+			},
+			"work_day_id": {
+				"_id": "620f6539fdd425b918d3e3cf",
+				"staff_id": "620e4fae43499c575452909f",
+				"day": "2022-02-25T00:00:00.000Z",
+				"status": "ok",
+				"createdAt": "2022-02-18T09:22:01.179Z",
+				"updatedAt": "2022-02-18T09:22:01.179Z",
+				"__v": 0
+			},
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:25:12.800Z",
+			"updatedAt": "2022-02-18T13:25:12.800Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f9e2ba4b6c60a37361102",
+			"salary_basic": 300000,
+			"user_id": {
+				"_id": "620d034b96e30c776ccb3e03",
+				"email": "taquang.hskx.2000@gmail.com",
+				"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+				"name": "Anh Quang Trần",
+				"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+				"role": 1,
+				"verify": true,
+				"createdAt": "2022-02-16T13:59:39.945Z",
+				"updatedAt": "2022-02-16T13:59:39.945Z",
+				"__v": 0
+			},
+			"staff_id": {
+				"_id": "620e4fae43499c575452909f",
+				"staff_name": "Trần Quang",
+				"user_id": "620d034b96e30c776ccb3e03",
+				"position_id": "620e4a8288e6701f6f116d01",
+				"star": 5,
+				"status": "ok",
+				"rank": "A",
+				"createdAt": "2022-02-17T13:37:50.943Z",
+				"updatedAt": "2022-02-17T13:37:50.943Z",
+				"__v": 0
+			},
+			"work_day_id": {
+				"_id": "620f6539fdd425b918d3e3cf",
+				"staff_id": "620e4fae43499c575452909f",
+				"day": "2022-02-25T00:00:00.000Z",
+				"status": "ok",
+				"createdAt": "2022-02-18T09:22:01.179Z",
+				"updatedAt": "2022-02-18T09:22:01.179Z",
+				"__v": 0
+			},
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:24:59.971Z",
+			"updatedAt": "2022-02-18T13:24:59.971Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## Salary API [PUT /api/update-salary/:id]
+
+### Description
+
+*  Update  Salary
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+    {
+	"data": {
+		"_id": "620f9e40a4b6c60a37361108",
+		"salary_basic": 1700000,
+		"user_id": {
+			"_id": "620d034b96e30c776ccb3e03",
+			"email": "taquang.hskx.2000@gmail.com",
+			"uid": "4Bva3NW8ezZ14shYRu1PUy2ECx93",
+			"name": "Anh Quang Trần",
+			"photoURL": "https://lh3.googleusercontent.com/a-/AOh14GhsbmxoxvGVJfoEmaNSPVk3fro4kU7Au-VktMJ_EA=s96-c",
+			"role": 1,
+			"verify": true,
+			"createdAt": "2022-02-16T13:59:39.945Z",
+			"updatedAt": "2022-02-16T13:59:39.945Z",
+			"__v": 0
+		},
+		"staff_id": {
+			"_id": "620e4fae43499c575452909f",
+			"staff_name": "Trần Quang",
+			"user_id": "620d034b96e30c776ccb3e03",
+			"position_id": "620e4a8288e6701f6f116d01",
+			"star": 5,
+			"status": "ok",
+			"rank": "A",
+			"createdAt": "2022-02-17T13:37:50.943Z",
+			"updatedAt": "2022-02-17T13:37:50.943Z",
+			"__v": 0
+		},
+		"work_day_id": {
+			"_id": "620f6539fdd425b918d3e3cf",
+			"staff_id": "620e4fae43499c575452909f",
+			"day": "2022-02-25T00:00:00.000Z",
+			"status": "ok",
+			"createdAt": "2022-02-18T09:22:01.179Z",
+			"updatedAt": "2022-02-18T09:22:01.179Z",
+			"__v": 0
+		},
+		"overtime": 0,
+		"holiday": 0,
+		"weekend": 0,
+		"insurance": 0,
+		"personal_income_tax": 0,
+		"bonus": 0,
+		"createdAt": "2022-02-18T13:25:20.357Z",
+		"updatedAt": "2022-02-18T13:26:38.538Z",
+		"__v": 0
+	},
+	"message": "Update salary successfully"
+}
+        ]
+
+## Salary API [DELETE /api/remove-salary/:id]
+
+### Description
+
+*  Delete Salary
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+   {
+	"message": "Delete salary successfully"
+}
+        ]
+
+
+## Salary API [GET /api/search-salary?option=$option]
+
+### Description
+
+*  Search  Salary
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+  {
+	"data": [
+		{
+			"_id": "620f9e2ba4b6c60a37361102",
+			"salary_basic": 300000,
+			"user_id": "620d034b96e30c776ccb3e03",
+			"staff_id": "620e4fae43499c575452909f",
+			"work_day_id": "620f6539fdd425b918d3e3cf",
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:24:59.971Z",
+			"updatedAt": "2022-02-18T13:24:59.971Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f9e38a4b6c60a37361104",
+			"salary_basic": 500000,
+			"user_id": "620d034b96e30c776ccb3e03",
+			"staff_id": "620e4fae43499c575452909f",
+			"work_day_id": "620f6539fdd425b918d3e3cf",
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:25:12.800Z",
+			"updatedAt": "2022-02-18T13:25:12.800Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f9e38a4b6c60a37361106",
+			"salary_basic": 500000,
+			"user_id": "620d034b96e30c776ccb3e03",
+			"staff_id": "620e4fae43499c575452909f",
+			"work_day_id": "620f6539fdd425b918d3e3cf",
+			"overtime": 0,
+			"holiday": 0,
+			"weekend": 0,
+			"insurance": 0,
+			"personal_income_tax": 0,
+			"bonus": 0,
+			"createdAt": "2022-02-18T13:25:12.965Z",
+			"updatedAt": "2022-02-18T13:25:12.965Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## Salary API [GET /api/filter-staff?staff=$staff_id]
+
+### Description
+
+*  Filter Salary for staff 
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+     {
+	"data": {
+		"_id": "620f9e2ba4b6c60a37361102",
+		"salary_basic": 300000,
+		"user_id": "620d034b96e30c776ccb3e03",
+		"staff_id": "620e4fae43499c575452909f",
+		"work_day_id": "620f6539fdd425b918d3e3cf",
+		"overtime": 0,
+		"holiday": 0,
+		"weekend": 0,
+		"insurance": 0,
+		"personal_income_tax": 0,
+		"bonus": 0,
+		"createdAt": "2022-02-18T13:24:59.971Z",
+		"updatedAt": "2022-02-18T13:24:59.971Z",
+		"__v": 0
+	}
+}
+        ]
+
+

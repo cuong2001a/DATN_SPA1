@@ -1,0 +1,285 @@
+FORMAT: 1A
+HOST: 
+
+# SPA - SPA
+
+|created at|author|
+|:---:|:---:|
+|2022-02-18|Tran Anh Quang|
+
+## Update history
+
+|no|date|author|change section|change log|
+|:---:|:---:|:---:|:---:|:---|
+
+## Service API [POST /api/create-service]
+
+### Description
+
+*  Create new service
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+{
+	"data": {
+		"service_name": "service_name",
+		"service_price": 20000,
+		"service_sale": 2111,
+		"service_star": 5,
+		"service_description": "service_description",
+		"service_content": "service_content",
+		"service_album": [
+			"service_album"
+		],
+		"category_id": "620f47b5f60e7259c018ec68",
+		"_id": "620f4a46f60e7259c018ec75",
+		"createdAt": "2022-02-18T07:27:02.117Z",
+		"updatedAt": "2022-02-18T07:27:02.117Z",
+		"__v": 0
+	},
+	"message": "Create product successfully"
+}
+        ]
+
+## Service API [GET /api/list-service]
+
+### Description
+
+*  List service
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+   {
+	"data": [
+		{
+			"_id": "620f4a86f60e7259c018ec79",
+			"service_name": "service_name3",
+			"service_price": 2000013,
+			"service_sale": 2111,
+			"service_star": 5,
+			"service_description": "service_description23",
+			"service_content": "service_content23",
+			"service_album": [
+				"service_album23"
+			],
+			"category_id": {
+				"_id": "620f47b5f60e7259c018ec68"
+			},
+			"createdAt": "2022-02-18T07:28:06.497Z",
+			"updatedAt": "2022-02-18T07:28:06.497Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f4a7df60e7259c018ec77",
+			"service_name": "service_name2",
+			"service_price": 200001,
+			"service_sale": 2111,
+			"service_star": 5,
+			"service_description": "service_description2",
+			"service_content": "service_content2",
+			"service_album": [
+				"service_album2"
+			],
+			"category_id": {
+				"_id": "620f47b5f60e7259c018ec68"
+			},
+			"createdAt": "2022-02-18T07:27:57.403Z",
+			"updatedAt": "2022-02-18T07:27:57.403Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f4a46f60e7259c018ec75",
+			"service_name": "service_name",
+			"service_price": 20000,
+			"service_sale": 2111,
+			"service_star": 5,
+			"service_description": "service_description",
+			"service_content": "service_content",
+			"service_album": [
+				"service_album"
+			],
+			"category_id": {
+				"_id": "620f47b5f60e7259c018ec68"
+			},
+			"createdAt": "2022-02-18T07:27:02.117Z",
+			"updatedAt": "2022-02-18T07:27:02.117Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## Service API [PUT /api/update-service/:id]
+
+### Description
+
+*  Update  service
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+    {
+	"data": {
+		"_id": "620f4a86f60e7259c018ec79",
+		"service_name": "service_name11",
+		"service_price": 2013,
+		"service_sale": 2111,
+		"service_star": 5,
+		"service_description": "service_description23",
+		"service_content": "service_content23",
+		"service_album": [
+			"service_alm23"
+		],
+		"category_id": {
+			"_id": "620f47b5f60e7259c018ec68"
+		},
+		"createdAt": "2022-02-18T07:28:06.497Z",
+		"updatedAt": "2022-02-18T07:29:57.357Z",
+		"__v": 1
+	},
+	"message": "Update product successfully"
+}
+        ]
+
+## Service API [DELETE /api/remove/user/service/:id]
+
+### Description
+
+*  Delete Service
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+           {
+	"message": "Delete service successfully"
+}
+        ]
+
+
+## Service API [GET /api/list-search/service?name=$service_name]
+
+### Description
+
+*  Search  service
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+   {
+	"data": [
+		{
+			"_id": "620f4a46f60e7259c018ec75",
+			"service_name": "service_name",
+			"service_price": 20000,
+			"service_sale": 2111,
+			"service_star": 5,
+			"service_description": "service_description",
+			"service_content": "service_content",
+			"service_album": [
+				"service_album"
+			],
+			"category_id": "620f47b5f60e7259c018ec68",
+			"createdAt": "2022-02-18T07:27:02.117Z",
+			"updatedAt": "2022-02-18T07:27:02.117Z",
+			"__v": 0
+		},
+		{
+			"_id": "620f4a7df60e7259c018ec77",
+			"service_name": "service_name2",
+			"service_price": 200001,
+			"service_sale": 2111,
+			"service_star": 5,
+			"service_description": "service_description2",
+			"service_content": "service_content2",
+			"service_album": [
+				"service_album2"
+			],
+			"category_id": "620f47b5f60e7259c018ec68",
+			"createdAt": "2022-02-18T07:27:57.403Z",
+			"updatedAt": "2022-02-18T07:27:57.403Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## Service API [GET /api/filter-category?category=$category_id]
+
+### Description
+
+*  Filter Service for category 
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+         {
+	"data": {
+		"_id": "620f4a46f60e7259c018ec75",
+		"service_name": "service_name",
+		"service_price": 20000,
+		"service_sale": 2111,
+		"service_star": 5,
+		"service_description": "service_description",
+		"service_content": "service_content",
+		"service_album": [
+			"service_album"
+		],
+		"category_id": "620f47b5f60e7259c018ec68",
+		"createdAt": "2022-02-18T07:27:02.117Z",
+		"updatedAt": "2022-02-18T07:27:02.117Z",
+		"__v": 0
+	}
+}
+        ]
+
+

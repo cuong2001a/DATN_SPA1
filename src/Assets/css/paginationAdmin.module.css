@@ -1,0 +1,27 @@
+.page-item {
+  color: rgb(107 114 128);
+  /* padding-left: 0.75rem;
+  padding-right: 0.75rem; */
+  /* padding-top: 0.4rem;
+  padding-bottom: 0.4rem; */
+  background-color: white;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  cursor: pointer;
+}
+.page-item a:active {
+  background-color: rgb(219 234 254);
+  color: rgb(37 99 235);
+}
+.page-item:hover {
+  background-color: rgb(243 244 246);
+}
+.page-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 35px;
+}

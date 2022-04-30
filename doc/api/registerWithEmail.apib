@@ -1,0 +1,51 @@
+FORMAT: 1A
+HOST: 
+
+# SPA register with email API
+
+|created at|author|
+|:---:|:---:|
+|2022-01-22|Tran Anh Quang|
+
+## Update history
+
+|no|date|author|change section|change log|
+|:---:|:---:|:---:|:---:|:---|
+
+## Album API [POST /api/register]
+
+### Description
+
+*  register with email
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+            {
+                "_id": {
+                    "$oid": "61ec0684f4685bb55021868a"
+                },
+                "role": 0,
+                "confirmed": false,
+                "name": "kaio",
+                "email": "songoku2192@gmail.com",
+                "hashed_password": "2c6c0290ea139abcea1d0d917e815ead2d47e332",
+                "emailToken": "8734039e-ac2e-4e55-b203-ecc3e9bf8fa9",
+                "uid": "8d0cb742-ee69-4cf3-808b-1139e72c2224",
+                "createdAt": {
+                    "$date": "2022-01-22T13:28:39.794Z"
+                },
+                "updatedAt": {
+                    "$date": "2022-01-22T13:28:39.794Z"
+                },
+                "__v": 0
+            }
+        ]

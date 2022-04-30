@@ -1,0 +1,28 @@
+.paginationBttns {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.paginationBttns li {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ec8e5e;
+  text-align: center;
+  position: relative;
+  margin: 0 10px;
+}
+.paginationBttns .paginationActive {
+  background-color: #ec8e5e;
+}
+.paginationBttns li a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 500;
+  color: #ec8e5e;
+}
+.paginationBttns .paginationActive a {
+  color: white;
+}

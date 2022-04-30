@@ -1,0 +1,36 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('http://fonts.cdnfonts.com/css/ibm-plex-sans-condensed-2');
+
+.scroll-custom-side-bar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.scroll-custom-side-bar::-webkit-scrollbar-thumb:hover {
+  transition: all 5s ease;
+  background-color: #868686;
+}
+
+.scroll-custom-side-bar::-webkit-scrollbar-thumb {
+  display: none;
+  background-color: transparent;
+  background-color: #bdbdbd;
+}
+
+.scroll-custom-side-bar::-webkit-scrollbar-track {
+  display: none;
+  background-color: #e4e4e4;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}

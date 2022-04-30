@@ -1,0 +1,157 @@
+FORMAT: 1A
+HOST: 
+
+# SPA Staff
+
+|created at|author|
+|:---:|:---:|
+|2022-02-17|Tran Anh Quang|
+
+## Update history
+
+|no|date|author|change section|change log|
+|:---:|:---:|:---:|:---:|:---|
+
+## Staff API [POST /api/create-staff]
+
+### Description
+
+*  Create new staff
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+         {
+	"data": {
+		"staff_name": "Trần Quang",
+		"user_id": "620d034b96e30c776ccb3e03",
+		"position_id": "620e4a8288e6701f6f116d01",
+		"star": 5,
+		"status": "ok",
+		"rank": "A",
+		"_id": "620e4fae43499c575452909f",
+		"createdAt": "2022-02-17T13:37:50.943Z",
+		"updatedAt": "2022-02-17T13:37:50.943Z",
+		"__v": 0
+	},
+	"message": "Create staff successfully"
+}
+        ]
+
+## Staff API [GET /api/list-staff]
+
+### Description
+
+*  List Staff
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+         {
+	"data": [
+		{
+			"_id": "620e502e43499c57545290a1",
+			"staff_name": "Trần Quang 2",
+			"user_id": "620d034b96e30c776ccb3e03",
+			"position_id": {
+				"_id": "620e4a8288e6701f6f116d01",
+				"position_name": "ADMIN"
+			},
+			"star": 5,
+			"status": "ok",
+			"rank": "A",
+			"createdAt": "2022-02-17T13:39:58.572Z",
+			"updatedAt": "2022-02-17T13:39:58.572Z",
+			"__v": 0
+		},
+		{
+			"_id": "620e4fae43499c575452909f",
+			"staff_name": "Trần Quang",
+			"user_id": "620d034b96e30c776ccb3e03",
+			"position_id": {
+				"_id": "620e4a8288e6701f6f116d01",
+				"position_name": "ADMIN"
+			},
+			"star": 5,
+			"status": "ok",
+			"rank": "A",
+			"createdAt": "2022-02-17T13:37:50.943Z",
+			"updatedAt": "2022-02-17T13:37:50.943Z",
+			"__v": 0
+		}
+	]
+}
+        ]
+
+## Staff API [PUT /api/update-staff/:id]
+
+### Description
+
+*  Update Staff
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+          {
+	"data": {
+		"_id": "620e502e43499c57545290a1",
+		"staff_name": "Trần Quang 9",
+		"user_id": "620d034b96e30c776ccb3e03",
+		"position_id": "620e4a8288e6701f6f116d01",
+		"star": 5,
+		"status": "time line",
+		"rank": "A+",
+		"createdAt": "2022-02-17T13:39:58.572Z",
+		"updatedAt": "2022-02-17T13:47:09.135Z",
+		"__v": 0
+	},
+	"message": "Update staff successfully"
+}
+        ]
+
+## Staff API [DELETE /api/remove-staff/:id]
+
+### Description
+
+*  Delete Staff
+
++ Request (application/json)
+
+    + Headers
+        ```
+        X-Requested-With: XMLHttpRequest
+        ```
+
++ Response 200 (application/json)
+
+     + Body
+        [
+           {
+	"message": "Delete staff successfully"
+}
+        ]
+
